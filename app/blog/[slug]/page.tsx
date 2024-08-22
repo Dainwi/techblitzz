@@ -21,24 +21,24 @@ interface BlogPost {
 
 export default async function Page() {
 
- 
 
-    const client = new Client()
-        .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
-        .setProject('6694d7e7003491b18c98'); // Your project ID
-    
-    const databases = new Databases(client);
-    
-    const result = await databases.listDocuments(
-        '6694e0fd0014dc3a6f44', // databaseId
-        '6694e24f00089d362812', // collectionId
-        [] // queries (optional)
-    );
-    
-    console.log(Response);
-    
-  
-  
+
+  const client = new Client()
+    .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
+    .setProject('6694d7e7003491b18c98'); // Your project ID
+
+  const databases = new Databases(client);
+
+  const result = await databases.listDocuments(
+    '6694e0fd0014dc3a6f44', // databaseId
+    '6694e24f00089d362812', // collectionId
+    [] // queries (optional)
+  );
+
+  console.log(Response);
+
+
+
   return (
     <div className="bg-background">
       <header className="bg-muted py-12 md:py-16 lg:py-20">
