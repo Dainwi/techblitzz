@@ -9,7 +9,8 @@ function Navbar() {
     const handleCloseMenu = () => setIsOpen(false);
 
     return (
-        <header className='container mx-auto'>
+        <header className='bg-gradient-to-r from-primary to-primary-foreground'>
+            <div className='container mx-auto'>
             <div className="py-4 px-6 flex items-center justify-between relative">
                 <Link href="/" className="flex items-center gap-2" prefetch={false}>
                     <NewspaperIcon className="h-6 w-6" />
@@ -76,6 +77,7 @@ function Navbar() {
                         </Link>
                     </div>
                 </nav>
+            </div>
             </div>
         </header>
     );
